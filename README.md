@@ -50,6 +50,8 @@ Notebook: `compare_countries.ipynb`
 -  One-way ANOVA test on GHI values (p-value reported)
 -  Bar chart ranking countries by average GHI
 -  Key observations documented in markdown cells
+
+---
 ## Contributions
 - Set up Git & CI workflows
 - Created and documented environment setup
