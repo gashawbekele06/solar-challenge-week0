@@ -51,14 +51,14 @@ Notebook: `compare_countries.ipynb`
 -  Bar chart ranking countries by average GHI
 -  Key observations documented in markdown cells
 
----
+
 ## Contributions
 - Set up Git & CI workflows
 - Created and documented environment setup
 - Performed EDA and data cleaning for three countries
 - Conducted cross-country comparison and statistical testing
 - Developed strategic insights for solar investment
----
+
 
 ## How to Reproduce the Environment
 ```bash
