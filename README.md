@@ -57,6 +57,7 @@ Notebook: `compare_countries.ipynb`
 - Conducted cross-country comparison and statistical testing
 - Developed strategic insights for solar investment
 ---
+
 ## How to Reproduce the Environment
 ```bash
 # Clone the repository
