@@ -51,11 +51,13 @@ Notebook: `compare_countries.ipynb`
 -  Bar chart ranking countries by average GHI
 -  Key observations documented in markdown cells
 
+
 ##  Strategic Recommendation for MoonLight Energy Solutions
 Based on the analysis:
-- MoonLight Energy Solutions should prioritize solar installations in regions with high average GHI values.  
-- Benin shows the highest median and average GHI, indicating strong solar potential. 
-- Togo exhibits moderate irradiance, suitable for hybrid solar solutions.   
+- MoonLight Energy Solutions should prioritize solar installations in regions with high average GHI values.
+- Benin (Malanville) is the top choice for investment due to its high DNI and GHI, making it ideal for large-scale solar projects such as CSP and PV farms. 
+- Togo (Dapaong) offers moderate irradiance, which supports efficient PV systems with single-axis tracking technology. 
+- Sierra Leone (Bumbuna) requires specialized solutions, including PV systems optimized for diffuse light and integrated energy storage for reliability.    
 - Investments in Benin and Sierra Leone are recommended to maximize sustainability and operational efficiency.
 
 ## Contributions
