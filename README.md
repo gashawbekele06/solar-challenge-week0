@@ -1,5 +1,4 @@
-## Solar Challenge – Week 0
-Welcome to the solar-challenge-week0 repository! 
+## Solar Challenge – Week 0 
 This project is part of the 10Academy Week 0 challenge, focused on setting up a robust data science environment and performing exploratory data analysis (EDA) on solar datasets from three countries. The ultimate goal is to support MoonLight Energy Solutions in identifying high-potential regions for solar installation aligned with their sustainability goals.
 
 ##  Repository Setup & Environment Configuration
