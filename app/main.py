@@ -1,6 +1,5 @@
 
 import streamlit as st
-import pandas as pd
 from utils import load, box, ghi, score, monthly
 
 # File paths
@@ -10,19 +9,25 @@ file_map = {
     "Togo": r"C:\Users\gasha\Desktop\solar-challenge-week0\data\togo_clean.csv"
 }
 
-# Sidebar
-st.sidebar.header("Options")
-selected_country = st.sidebar.selectbox("Choose a country", list(file_map.keys()))
+# Sidebar options
+st.sidebar.header("Sidebar of Solar Data")
+selected_country = st.sidebar.selectbox("Select a country", list(file_map.keys()))
+st.sidebar.header("Check the box")
 show_ghi = st.sidebar.checkbox("Show Average GHI Summary")
 show_score = st.sidebar.checkbox("Show Investment Score Summary")
 show_monthly = st.sidebar.checkbox("Show Monthly Average GHI Line Chart")
+
+# Main body title
+st.title("Solar Data Analysis Dashboard")
+st.markdown("The dashboard provides insights into solar resource metrics (GHI, DNI, DHI) and investment priorities across selected countries.")
+st.markdown("The default selected country is benin.")
 
 # Load selected country data
 df = load(file_map[selected_country])
 df["Country"] = selected_country
 
 # Display data
-st.title(f"Data for {selected_country}")
+st.subheader(f"Data for {selected_country}")
 st.dataframe(df)
 
 # Boxplots

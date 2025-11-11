@@ -3,11 +3,9 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-# Load CSV file
 def load(path):
     return pd.read_csv(path)
 
-# Boxplots for metrics
 def box(df, metrics):
     figs = []
     for metric in metrics:
@@ -19,7 +17,6 @@ def box(df, metrics):
             figs.append(fig)
     return figs
 
-# Average GHI summary
 def ghi(df_list):
     combined = pd.concat(df_list, ignore_index=True)
     if "GHI" in combined.columns:
@@ -32,7 +29,6 @@ def ghi(df_list):
         return fig
     return None
 
-# Investment score summary
 def score(df_list):
     def calc(df):
         df = df[(df["GHI"] > 0) & (df["DNI"] > 0)]
@@ -46,7 +42,6 @@ def score(df_list):
     ax.set_ylabel("Investment Score")
     return fig
 
-# Monthly average GHI line chart
 def monthly(df_list):
     def prep(df):
         df = df.copy()
