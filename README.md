@@ -65,6 +65,13 @@ Based on the analysis:
 - Conducted cross-country comparison and statistical testing
 - Developed strategic insights for solar investment
 
+## Interactive Dashboard
+This project includes an **Interactive Dashboard** built with Streamlit for visualizing and analyzing solar data interactively.
+### Live Dashboard
+Access the dashboard here:  
+👉 [https://dashboard-dev06.streamlit.app/]
+- User-friendly interface for exploring solar datasets
+- Real-time filtering and data insights
 
 ## How to Reproduce the Environment
 ```bash
@@ -76,3 +83,10 @@ python -m venv venv
 source venv/bin/activate  # On Windows use: venv\\Scripts\\activate
 # Install dependencies
 pip install -r requirements.txt
+
+
+
+**Run the dashboard locally**:
+    ```bash
+    streamlit run app/main.py
+    ```
