@@ -3,8 +3,10 @@ import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
 
+
 def load(path):
     return pd.read_csv(path)
+
 
 def box(df, metrics):
     figs = []
@@ -16,6 +18,7 @@ def box(df, metrics):
             ax.set_ylabel(f'{metric} (W/m²)')
             figs.append(fig)
     return figs
+
 
 def ghi(df_list):
     combined = pd.concat(df_list, ignore_index=True)
@@ -29,6 +32,7 @@ def ghi(df_list):
         return fig
     return None
 
+
 def score(df_list):
     def calc(df):
         df = df[(df["GHI"] > 0) & (df["DNI"] > 0)]
@@ -41,6 +45,7 @@ def score(df_list):
     ax.set_xlabel("Country")
     ax.set_ylabel("Investment Score")
     return fig
+
 
 def monthly(df_list):
     def prep(df):

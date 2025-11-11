@@ -1,12 +1,11 @@
-
 import streamlit as st
 from utils import load, box, ghi, score, monthly
 
 # File paths
 file_map = {
-    "Benin": r"C:\Users\gasha\Desktop\solar-challenge-week0\data\benin_clean.csv",
-    "Sierra Leone": r"C:\Users\gasha\Desktop\solar-challenge-week0\data\sierraleone_clean.csv",
-    "Togo": r"C:\Users\gasha\Desktop\solar-challenge-week0\data\togo_clean.csv"
+    "Benin": r"https://drive.google.com/uc?export=download&id=1m6Ph3OP7LkRBHnKZBeb-h9AKXypqioNk",
+    "Sierra Leone": r"https://drive.google.com/uc?export=download&id=1xTSguWTLZA-h3UR2Zl3WRV80wKcE9vaa",
+    "Togo": r"https://drive.google.com/uc?export=download&id=1Kowv-VIvGS1NARZEeEkrtmOPP1bmcjH9"
 }
 
 # Sidebar options
